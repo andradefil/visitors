@@ -1,2 +1,9 @@
-{:deps
- {org.clojure/clojurescript {:mvn/version "1.12.42"}}}
+{:aliases
+ {:cljs-frontend
+  {:paths ["src/cljs"]
+   :deps
+   {org.clojure/clojurescript {:mvn/version "1.12.42"}}}
+  :rest-server
+  {:paths ["src/clj"]
+   :deps
+   {http-kit/http-kit {:mvn/version "2.8.1"}}}}}
